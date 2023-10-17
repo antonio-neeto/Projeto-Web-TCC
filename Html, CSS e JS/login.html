@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login<br>Para acessar a plataforma</h1>
+            <img src="imagem-login.svg" class="left-login-image" alt="imagem-login"> 
+        </div>    
+    <form>  
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+            </form>        
+                </div>
+                <div class="botoes">
+                    <button type="submit" class="btn-login" onclick="logar()">Login</button>
+                    <p>Ainda não tem cadastro? <a href="cadastro.html">Inscreva-se</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function logar() {
+            var usuario = document.getElementById('usuario').value;
+            var senha = document.getElementById('senha').value;
+
+            if (usuario === "admin" && senha === "admin") {
+                location.href = "home.html";
+            } else {
+                alert('Usuário ou senha incorretos');
+            }
+        }
+    </script>
+</body>
+</html>

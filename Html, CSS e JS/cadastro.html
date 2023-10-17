@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="main-cadastro">
+        <div class="left-cadastro">
+            <h1>Crie uma conta<br>Para acessar a plataforma</h1>
+            <img src="imagem-cadastro.svg" class="left-cadastro-image" alt="imagem-cadastro"> 
+        </div>    
+        <div class="right-cadastro">
+            <div class="card-cadastro">
+                <h1>CADASTRO</h1>
+                <form id="form" class="form">
+                    <div class="textfield-cadastro">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Digite um nome de usuario...">
+                        <span class="error-message">Aqui vai a mensagem de erro...</span>
+                    </div>
+                    <div class="textfield-cadastro">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome...">
+                        <span class="error-message">Aqui vai a mensagem de erro...</span>
+                    </div>
+                    <div class="textfield-cadastro">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome...">
+                        <span class="error-message">Aqui vai a mensagem de erro...</span>
+                    </div>
+                    <div class="textfield-cadastro">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email...">
+                        <span class="error-message">Aqui vai a mensagem de erro...</span>
+                    </div>
+                    <div class="textfield-cadastro">
+                        <label for="curso">Curso</label>
+                        <select id="curso" name="curso" required>
+                        <option value="" disabled selected>Selecione seu curso...</option>
+                        <option value="ADMINISTRAÇÃO">ADMINISTRAÇÃO</option>
+                        <option value="AUTOMAÇÃO INDUSTRIAL">AUTOMAÇÃO INDUSTRIAL</option>
+                        <option value="DESENVOLVIMENTO DE SISTEMAS">DESENVOLVIMENTO DE SISTEMAS</option>
+                        <option value="EDIFICAÇÕES">EDIFICAÇÕES</option>
+                        <option value="ELETROMECÂNICA">ELETROMECÂNICA</option>
+                        <option value="ELETROTÉCNICA">ELETROTÉCNICA</option>
+                        <option value="LOGISTICA">LOGISTICA</option>
+                        <option value="MANUTENÇÃO AUTOMOTIVA">MANUTENÇÃO AUTOMOTIVA</option>
+                        <option value="MECÂNICA">MECÂNICA</option>
+                        <option value="MECATRÔNICA">MECATRÔNICA</option>
+                        <option value="PETROQUÍMICA">PETROQUÍMICA</option>
+                        <option value="QUALIDADE">QUALIDADE</option>
+                        <option value="QUÍMICA">QUÍMICA</option>
+                        <option value="REDES DE COMPUTADORES">REDES DE COMPUTADORES</option>
+                        <option value="REFRIGERAÇÃO E CLIMATIZAÇÃO">REFRIGERAÇÃO E CLIMATIZAÇÃO</option>
+                        <option value="SEGURANÇA DO TRABALHO">SEGURANÇA DO TRABALHO</option>
+                    </select>
+                        <span class="error-message">Aqui vai a mensagem de erro...</span>
+                    </div>
+                    <div class="textfield-cadastro">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha...">
+                        <span class="error-message">Aqui vai a mensagem de erro...</span>
+                    </div>
+                    <div class="textfield-cadastro">
+                        <label for="confirmarSenha">Confirmação da Senha</label>
+                        <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Digite sua senha novemente...">
+                        <span class="error-message">Aqui vai a mensagem de erro...</span>
+                    </div>
+                    <div class="botoes">
+                        <button type="submit" class="btn-cadastro">Cadastrar</button>
+                        <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./processamento-cadastro.js"></script>
+</body>
+</html>
